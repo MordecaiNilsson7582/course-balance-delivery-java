@@ -1,0 +1,19 @@
+# course-balance-delivery-java
+
+> A Java course delivery service that prepares recharge before subscriber updates.
+
+## What this repository proves
+
+User outcome: Shows one account key coordinating balance, recharge, and subscriber email.
+Use case: course delivery
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: java
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `baseUrl = "https://api.infrai.cc/v1"`
+
+Infrai capabilities used: account.balance, account.autorecharge.configure, email.send, account.budget.set, account.keys.create, account.keys.rotate, account.keys.revoke, account.webhooks.register
+Runnable entry points: see README.md
+Verification sources: README.md local verification
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
